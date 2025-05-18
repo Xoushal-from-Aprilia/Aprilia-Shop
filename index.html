@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shop Prototype</title>
+    <title>APRILIA SHOP | Acquista con sconti assurdi.</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,12 +34,13 @@
 
         /* Hamburger icon */
         .hamburger {
-            width: 30px;
-            height: 25px;
+            width: 20px;
+            height: 15px;
             cursor: pointer;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+               -webkit-tap-highlight-color: transparent; /* Rimuove l'effetto di evidenziazione */
         }
 
         .hamburger div {
@@ -47,6 +48,7 @@
             background-color: #943DDF;
             border-radius: 2px;
             transition: all 0.3s ease;
+               -webkit-tap-highlight-color: transparent; /* Rimuove l'effetto di evidenziazione */
         }
 
         /* Side menu */
@@ -64,6 +66,8 @@
             z-index: 1002;
             display: flex;
             flex-direction: column;
+            
+               -webkit-tap-highlight-color: transparent; /* Rimuove l'effetto di evidenziazione */
         }
 
         .side-menu.open {
@@ -135,7 +139,7 @@
             justify-content: center;
             margin: 30px auto;
             max-width: 1200px;
-            
+            margin-bottom: 70px;
         }
 
         .category-btn {
@@ -148,6 +152,8 @@
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s;
+            
+               -webkit-tap-highlight-color: transparent; /* Rimuove l'effetto di evidenziazione */
         }
 
         .category-btn img {
@@ -241,6 +247,13 @@
     padding: 0 5%;
 }
 
+.products-grid h2 {
+            font-size: 1.8rem;
+            color: #943DDF;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
 .products-grid .product {
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -287,8 +300,9 @@
 
 .products-grid .product button:hover {
     background-color: #8228cc;
-}
-        
+} 
+   
+   
     </style>
 </head>
 <body>
@@ -322,52 +336,68 @@
             <div class="product">
                 <img src="/prodotti-evidenza/2e2988547598cef9cff2925fc6ce6c71.gif" alt="Prodotto 1" />
                 <div class="product-info">
-                    <h2>Featured 1</h2>
-                    <p>$49.99</p>
+                    <h2>Binocular Inc.</h2>
+                    <p>€49.99</p>
                 </div>
             </div>
             <div class="product">
                 <img src="/prodotti-evidenza/0e96e03638db626fd5db03f926d8535d.jpg" alt="Prodotto 2" />
                 <div class="product-info">
-                    <h2>Featured 2</h2>
-                    <p>$59.99</p>
+                    <h2>Clothing Club</h2>
+                    <p>€59.99</p>
                 </div>
             </div>
             <div class="product">
                 <img src="/prodotti-evidenza/140826514e3c2c6168a0553210fce864.jpg" alt="Prodotto 3" />
                 <div class="product-info">
-                    <h2>Featured 3</h2>
-                    <p>$39.99</p>
+                    <h2>DinoSur s.p.a</h2>
+                    <p>€39.99</p>
                 </div>
             </div>
         </div>
     </section>
 
 <section class="categories">
-        <a href="#" class="category-btn"><img src="/restaurant.png" alt="Cibo" />Cibo</a>
-        <a href="#" class="category-btn"><img src="/tools.png" alt="Utensili" />Utensili e Attrezzi</a>
-        <a href="#" class="category-btn"><img src="/clothes-hanger.png" alt="Abbigliamento" />Abbigliamento</a>
-    </section>
-    
+        <a href="#" class="category-btn"><img src="/icons/restaurant.png" alt="Cibo" />Cibo</a>
+        
 
+        
+
+        <a href="#" class="category-btn"><img src="/icons/clothes-hanger.png" alt="Abbigliamento" />Abbigliamento</a>
+        
+                    <a href="#" class="category-btn"><img src="/icons/seedling.png" alt="Piante" />Piante</a>
+        
+        <a href="#" class="category-btn"><img src="/icons/tools.png" alt="Utensili" />Utensili e Attrezzi</a>
+   
+    </section>
+
+ 
 <section class="products-grid">
+    
     <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Prodotto 1">
-        <h3>Prodotto 1</h3>
-        <p>€29.99</p>
-        <button>Aggiungi al carrello</button>
+        <img src="/prodotti-home/52e9f55be3f9ff605a658b71c07e1b8e.jpg" alt="Prodotto 1">
+        <h3>Bonsai Plant</h3>
+        <p>€89.99</p>
+        <button onclick="window.location.href='/home.html'">Acquista</button>
     </div>
     <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Prodotto 2">
-        <h3>Prodotto 2</h3>
-        <p>€39.99</p>
-        <button>Aggiungi al carrello</button>
+        <img src="/prodotti-home/6669aa09bc7baabaf050f80c86416806.jpg" alt="Prodotto 2">
+        <h3>Cup Noodles</h3>
+        <p>€8.99</p>
+        <button>Acquista</button>
     </div>
     <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Prodotto 3">
-        <h3>Prodotto 3</h3>
+        <img src="/prodotti-home/d5d4bb7e8a83e3cc20f3383e4ca3e5c7.jpg" alt="Prodotto 3">
+        <h3>Hamburger Double</h3>
+        <p>€11.99</p>
+        <button>Acquista</button>
+    </div>
+    
+      <div class="product">
+        <img src="/prodotti-home/3f5bbd11d55c425e36f09cba2712daed.jpg" alt="Prodotto 1">
+        <h3>Martello</h3>
         <p>€19.99</p>
-        <button>Aggiungi al carrello</button>
+        <button>Acquista</button>
     </div>
 </section>
 
